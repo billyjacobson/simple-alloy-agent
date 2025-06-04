@@ -1,0 +1,11 @@
+[project]
+name = "alloydb-mcp-adk"
+version = "0.1.0"
+description = "Learn how to interact with an AlloyDB database using AI Agents. with the MCP Database Toolbox and Google Agent Development Kit (ADK)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "deprecated>=1.2.18",
+    "google-adk>=1.1.1",
+    "toolbox-core>=0.2.0",
+]

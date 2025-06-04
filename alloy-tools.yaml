@@ -1,0 +1,21 @@
+sources:
+  alloydb-pg-source:
+    kind: alloydb-postgres
+    project: ${ALLOYDB_PROJECT}
+    region: ${ALLOYDB_REGION}
+    cluster: ${ALLOYDB_CLUSTER}
+    instance: ${ALLOYDB_INSTANCE}
+    database: ${ALLOYDB_DB}
+    user: ${ALLOYDB_USER}
+    password: ${ALLOYDB_PASS}
+
+tools:
+  list-100:
+    kind: postgres-sql
+    source: alloydb-pg-source
+    description: List 100 items from your table.
+    statement: SELECT * FROM ${ALLOYDB_TABLE} LIMIT 100;
+ 
+toolsets:
+  my-toolset:
+    - list-100
