@@ -2,6 +2,8 @@
 
 This example demonstrates how to interact with an AlloyDB database using AI Agents with the Model Context Protocol (MCP) Database Toolbox and Google Agent Development Kit (ADK).
 
+![Agent Chat Example](./agent-chat-screenshot.png)
+
 ## Prerequisites
 
 - [MCP Toolbox for Databases](https://github.com/googleapis/genai-toolbox) installed
@@ -55,3 +57,7 @@ This example demonstrates how to interact with an AlloyDB database using AI Agen
     ```
 
     The ADK web interface should now be available at http://localhost:8080, where you can interact with your AlloyDB database using natural language.
+
+## Disclaimer
+
+This is example/demo code and may not be actively maintained or ready for production deployment. Use at your own risk.
