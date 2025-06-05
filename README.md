@@ -6,7 +6,6 @@ This example demonstrates how to interact with an AlloyDB database using AI Agen
 
 ## Prerequisites
 
-- [MCP Toolbox for Databases](https://github.com/googleapis/genai-toolbox) installed
 - Access to an [AlloyDB instance](https://cloud.google.com/alloydb) on Google Cloud Platform
 - [Gemini API key](https://aistudio.google.com/apikey) for accessing Google AI models
 - Python 3.10 or newer
@@ -20,14 +19,14 @@ This example demonstrates how to interact with an AlloyDB database using AI Agen
     uv sync
     ```
 
-2. Create the environment files:
+1. Create the environment files:
 
     ```bash
     cp .env.example .env
     cp alloydb_agent/.env.example alloydb_agent/.env
     ```
 
-3. Edit the `.env` files and fill in your credentials:
+1. Edit the `.env` files and fill in your credentials:
    - In the root `.env` file:
      - Fill in AlloyDB connection details (`ALLOYDB_PROJECT`, `ALLOYDB_REGION`, etc.)
    - In the `alloydb_agent/.env` file:
@@ -36,20 +35,27 @@ This example demonstrates how to interact with an AlloyDB database using AI Agen
      - OR for Vertex AI:
        - See the [ADK documentation](https://google.github.io/adk-docs/get-started/quickstart/#set-up-the-model) for complete Vertex AI setup instructions
 
-4. Source the environment variables:
+1. Source the environment variables:
 
     ```bash
     source .env
     ```
 
-5. Start the MCP Toolbox with the provided tools configuration:
+1. Download the [MCP Toolbox for Databases](https://github.com/googleapis/genai-toolbox)
+
+    ```bash
+    export OS="linux/amd64" # one of linux/amd64, darwin/arm64, darwin/amd64, or windows/amd64
+    curl -O https://storage.googleapis.com/genai-toolbox/v0.6.0/$OS/toolbox
+    ```
+
+1. Start the MCP Toolbox with the provided tools configuration:
 
     ```bash
     # Replace with the actual path to your MCP Toolbox executable
-    /path/to/toolbox --tools-file "alloy-tools.yaml"
+    ./toolbox --tools-file "alloy-tools.yaml"
     ```
 
-6. In a separate terminal, activate the virtual environment and start the ADK server:
+1. In a separate terminal, activate the virtual environment and start the ADK server:
 
     ```bash
     source .venv/bin/activate
