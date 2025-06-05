@@ -52,7 +52,6 @@ This example demonstrates how to interact with an AlloyDB database using AI Agen
 1. Start the MCP Toolbox with the provided tools configuration:
 
     ```bash
-    # Replace with the actual path to your MCP Toolbox executable
     ./toolbox --tools-file "alloy-tools.yaml"
     ```
 
