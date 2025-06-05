@@ -6,7 +6,7 @@ This example demonstrates how to interact with an AlloyDB database using AI Agen
 
 ## Prerequisites
 
-- Access to an [AlloyDB instance](https://cloud.google.com/alloydb) on Google Cloud Platform
+- Access to an [AlloyDB instance](https://cloud.google.com/alloydb?utm_campaign=CDR_0x9200541f_user-journey_b422433526&utm_medium=external&utm_source=blog) on Google Cloud Platform
 - [Gemini API key](https://aistudio.google.com/apikey) for accessing Google AI models
 - Python 3.10 or newer
 - [uv](https://github.com/astral-sh/uv) package manager
