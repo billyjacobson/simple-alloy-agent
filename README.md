@@ -46,6 +46,7 @@ This example demonstrates how to interact with an AlloyDB database using AI Agen
     ```bash
     export OS="linux/amd64" # one of linux/amd64, darwin/arm64, darwin/amd64, or windows/amd64
     curl -O https://storage.googleapis.com/genai-toolbox/v0.6.0/$OS/toolbox
+    chmod +x toolbox
     ```
 
 1. Start the MCP Toolbox with the provided tools configuration:
@@ -53,7 +54,6 @@ This example demonstrates how to interact with an AlloyDB database using AI Agen
     ```bash
     # Replace with the actual path to your MCP Toolbox executable
     ./toolbox --tools-file "alloy-tools.yaml"
-    chmod +x toolbox
     ```
 
 1. In a separate terminal, activate the virtual environment and start the ADK server:
