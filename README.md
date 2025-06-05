@@ -62,7 +62,7 @@ This example demonstrates how to interact with an AlloyDB database using AI Agen
     adk web
     ```
 
-    The ADK web interface should now be available at http://localhost:8080, where you can interact with your AlloyDB database using natural language.
+    The ADK web interface should now be available at http://localhost:8000, where you can interact with your AlloyDB database using natural language.
 
 ## Disclaimer
 
